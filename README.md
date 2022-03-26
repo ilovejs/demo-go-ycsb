@@ -99,12 +99,14 @@ make
   ./bin/go-ycsb load mysql -P workloads/workloada && ./bin/go-ycsb run mysql -P workloads/workloada
 
   READ   - Takes(s): 3.4, Count: 522, OPS: 154.3, Avg(us): 124, Min(us): 83, Max(us): 393, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 1000
+
   UPDATE - Takes(s): 3.4, Count: 478, OPS: 141.5, Avg(us): 6932, Min(us): 5663, Max(us): 22406, 99th(us): 17000, 99.9th(us): 23000, 99.99th(us): 23000
 
 - b
   ./bin/go-ycsb load mysql -P workloads/workloadb && ./bin/go-ycsb run mysql -P workloads/workloadb
 
   READ   - Takes(s): 0.4, Count: 959, OPS: 2645.3, Avg(us): 100, Min(us): 81, Max(us): 533, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 1000
+
   UPDATE - Takes(s): 0.4, Count: 41, OPS: 116.2, Avg(us): 6418, Min(us): 4366, Max(us): 9214, 99th(us): 10000, 99.9th(us): 10000, 99.99th(us): 10000
 
 - c
@@ -116,19 +118,23 @@ make
   ./bin/go-ycsb load mysql -P workloads/workloadd && ./bin/go-ycsb run mysql -P workloads/workloadd
 
   INSERT - Takes(s): 0.4, Count: 42, OPS: 101.9, Avg(us): 7243, Min(us): 5650, Max(us): 14466, 99th(us): 15000, 99.9th(us): 15000, 99.99th(us): 15000
+
   READ   - Takes(s): 0.4, Count: 958, OPS: 2286.6, Avg(us): 115, Min(us): 89, Max(us): 924, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 100
 
 - e
   ./bin/go-ycsb load mysql -P workloads/workloade && ./bin/go-ycsb run mysql -P workloads/workloade
 
   INSERT - Takes(s): 0.2, Count: 57, OPS: 242.7, Avg(us): 1906, Min(us): 99, Max(us): 9112, 99th(us): 10000, 99.9th(us): 10000, 99.99th(us): 10000
+
   SCAN   - Takes(s): 0.2, Count: 943, OPS: 3970.9, Avg(us): 131, Min(us): 99, Max(us): 549, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 100
 
 - f
   ./bin/go-ycsb load mysql -P workloads/workloadf && ./bin/go-ycsb run mysql -P workloads/workloadf
 
   READ              - Takes(s): 3.5, Count: 1000, OPS: 288.0, Avg(us): 121, Min(us): 81, Max(us): 435, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 1000
+
   READ_MODIFY_WRITE - Takes(s): 3.5, Count: 523, OPS: 150.9, Avg(us): 6524, Min(us): 5606, Max(us): 17107, 99th(us): 12000, 99.9th(us): 18000, 99.99th(us): 18000
+
   UPDATE            - Takes(s): 3.5, Count: 523, OPS: 150.9, Avg(us): 6395, Min(us): 5469, Max(us): 16975, 99th(us): 12000, 99.9th(us): 17000, 99.99th(us): 1700
 
 # pg
@@ -137,12 +143,14 @@ make
   ./bin/go-ycsb load pg -P workloads/workloada && ./bin/go-ycsb run pg -P workloads/workloada
 
   READ   - Takes(s): 0.6, Count: 504, OPS: 879.8, Avg(us): 90, Min(us): 72, Max(us): 380, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 1000
+
   UPDATE - Takes(s): 0.6, Count: 496, OPS: 863.6, Avg(us): 1061, Min(us): 938, Max(us): 3869, 99th(us): 3000, 99.9th(us): 4000, 99.99th(us): 4000
 
 - b
   ./bin/go-ycsb load pg -P workloads/workloadb && ./bin/go-ycsb run pg -P workloads/workloadb
 
   READ   - Takes(s): 0.2, Count: 934, OPS: 6182.8, Avg(us): 80, Min(us): 62, Max(us): 1123, 99th(us): 1000, 99.9th(us): 2000, 99.99th(us): 2000
+
   UPDATE - Takes(s): 0.1, Count: 66, OPS: 451.2, Avg(us): 1123, Min(us): 945, Max(us): 4069, 99th(us): 5000, 99.9th(us): 5000, 99.99th(us): 500
 
 - c
@@ -154,19 +162,23 @@ make
   ./bin/go-ycsb load pg -P workloads/workloadd && ./bin/go-ycsb run pg -P workloads/workloadd
 
   INSERT - Takes(s): 0.2, Count: 48, OPS: 306.6, Avg(us): 1454, Min(us): 1016, Max(us): 4232, 99th(us): 5000, 99.9th(us): 5000, 99.99th(us): 5000
+
   READ   - Takes(s): 0.2, Count: 952, OPS: 5913.7, Avg(us): 92, Min(us): 64, Max(us): 1095, 99th(us): 1000, 99.9th(us): 2000, 99.99th(us
 
 - e
   ./bin/go-ycsb load pg -P workloads/workloade && ./bin/go-ycsb run pg -P workloads/workloade
 
   INSERT - Takes(s): 0.1, Count: 44, OPS: 324.3, Avg(us): 100, Min(us): 82, Max(us): 298, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 1000
+
   SCAN   - Takes(s): 0.1, Count: 956, OPS: 6915.7, Avg(us): 137, Min(us): 103, Max(us): 1100, 99th(us): 1000, 99.9th(us): 2000, 99.99th(us): 200
 
 - f
   ./bin/go-ycsb load pg -P workloads/workloadf && ./bin/go-ycsb run pg -P workloads/workloadf
 
   READ              - Takes(s): 0.6, Count: 1000, OPS: 1550.4, Avg(us): 83, Min(us): 62, Max(us): 1085, 99th(us): 1000, 99.9th(us): 1000, 99.99th(us): 2000
+
   READ_MODIFY_WRITE - Takes(s): 0.6, Count: 512, OPS: 799.3, Avg(us): 1176, Min(us): 1001, Max(us): 4308, 99th(us): 2000, 99.9th(us): 5000, 99.99th(us): 5000
+
   UPDATE            - Takes(s): 0.6, Count: 512, OPS: 799.2, Avg(us): 1088, Min(us): 911, Max(us): 4176, 99th(us): 2000, 99.9th(us): 5000, 99.99th(us): 50
 
 # conclusion
