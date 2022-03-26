@@ -71,7 +71,7 @@ func (c pgCreator) Create(p *properties.Properties) (ycsb.DB, error) {
 	host := p.GetString(pgHost, "127.0.0.1")
 	port := p.GetInt(pgPort, 5432)
 	user := p.GetString(pgUser, "root")
-	password := p.GetString(pgPassword, "")
+	password := p.GetString(pgPassword, "password")
 	dbName := p.GetString(pgDBName, "test")
 	sslMode := p.GetString(pdSSLMode, "disable")
 

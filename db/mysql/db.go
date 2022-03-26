@@ -69,7 +69,7 @@ func (c mysqlCreator) Create(p *properties.Properties) (ycsb.DB, error) {
 	host := p.GetString(mysqlHost, "127.0.0.1")
 	port := p.GetInt(mysqlPort, 3306)
 	user := p.GetString(mysqlUser, "root")
-	password := p.GetString(mysqlPassword, "")
+	password := p.GetString(mysqlPassword, "password") // changed
 	dbName := p.GetString(mysqlDBName, "test")
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", user, password, host, port, dbName)
